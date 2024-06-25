@@ -1,7 +1,17 @@
+/* Estilos globais */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Links */
 a {
     color: white;
     text-decoration: none;
     border-radius: 2px;
+    font-size: 14pt;
 }
 
 a:hover {
@@ -10,23 +20,74 @@ a:hover {
     transition: 0.3s;
 }
 
+/* Cartões */
 .card {
-    width: 250px;
-    height: 80px;
+    width: 80%;
+    max-width: 600px;
+    height: auto;
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 20px;
+    padding: 40px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    span {
-        position: absolute;
-        margin-left: 15px;
-        margin-top: 25px;
-        font-size: 18pt;
+.name {
+    position: relative;
+    margin-top: 10%;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.dev {
+    position: relative;
+    margin-top: 10%;
+    font-size: 14pt;
+}
+
+/* Imagens */
+.image {
+    height: 210px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .card span {
+        margin-top: 5%;
+        font-size: 16pt;
+    }
+
+    .image {
+        height: 80px;
+        width: 80px;
     }
 }
 
-.image {
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
+@media (max-width: 480px) {
+    .card {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .card span {
+        font-size: 14pt;
+    }
+
+    .image {
+        height: 70px;
+        width: 70px;
+    }
 }
