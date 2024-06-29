@@ -12,6 +12,8 @@ a {
     text-decoration: none;
     border-radius: 2px;
     font-size: 14pt;
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
 
 a:hover {
@@ -23,11 +25,11 @@ a:hover {
 /* Cartões */
 .card {
     width: 80%;
-    max-width: 600px;
+    max-width: 700px;
     height: auto;
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 40px;
+    padding: 30px;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
@@ -39,55 +41,45 @@ a:hover {
 
 .name {
     position: relative;
-    margin-top: 10%;
+    margin-top: 10px;
     font-size: 20pt;
     font-weight: bold;
 }
 
 .dev {
     position: relative;
-    margin-top: 10%;
+    margin-top: 10px;
     font-size: 14pt;
 }
 
 /* Imagens */
 .image {
-    height: 210px;
-    width: 200px;
+    height: 40%;
+    width: 40%;
     border-radius: 50%;
-    margin-bottom: 20px;
+    display: flex;
+}
+
+.social {
+    margin-top: 35px;
+}
+
+.link {
+    display: inline;
+    margin-right: 20px;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
     .card {
-        width: 90%;
+        width: 85%;
         padding: 30px;
-    }
-
-    .card span {
-        margin-top: 5%;
-        font-size: 16pt;
-    }
-
-    .image {
-        height: 80px;
-        width: 80px;
     }
 }
 
 @media (max-width: 480px) {
     .card {
-        width: 95%;
+        width: 90%;
         padding: 20px;
-    }
-
-    .card span {
-        font-size: 14pt;
-    }
-
-    .image {
-        height: 70px;
-        width: 70px;
     }
 }
